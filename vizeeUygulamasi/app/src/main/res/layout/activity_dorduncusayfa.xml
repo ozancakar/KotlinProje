@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1B1B"
+    tools:context=".dorduncusayfa">
+
+    <TextView
+        android:id="@+id/corbaEslestir"
+        android:layout_width="206dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:text="TextView"
+        android:textColor="#F10909"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textGelen1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginBottom="76dp"
+        android:text="Tuz Oranı"
+        android:textColor="#959494"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/textgelen3"
+        app:layout_constraintEnd_toEndOf="@+id/textGelen2"
+        app:layout_constraintStart_toStartOf="@+id/textGelen2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textGelen2"
+        android:layout_width="0dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="36dp"
+        android:text="Acı Oranı"
+        android:textColor="#959494"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/textgelen3"
+        app:layout_constraintEnd_toStartOf="@+id/switch11"
+        app:layout_constraintStart_toStartOf="@+id/corbaEslestir"
+        app:layout_constraintTop_toTopOf="@+id/textGelen1" />
+
+    <TextView
+        android:id="@+id/textgelen3"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="5dp"
+        android:text="Lütfen İsteklerinizi İşaretleyiniz"
+        android:textColor="#FF3D00"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/switch1"
+        app:layout_constraintEnd_toEndOf="@+id/textGelen4"
+        app:layout_constraintStart_toStartOf="@+id/textGelen2" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="0dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="#7A7A7A"
+        android:foregroundTint="#8F8F8F"
+        android:max="2"
+        android:progress="0"
+        android:progressTint="#8C8C8C"
+        app:layout_constraintBottom_toBottomOf="@+id/textGelen2"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar2"
+        app:layout_constraintStart_toStartOf="@+id/seekBar2"
+        app:layout_constraintTop_toTopOf="@+id/textGelen1" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="#7A7A7A"
+        android:foregroundTint="#8F8F8F"
+        android:max="2"
+        android:progress="0"
+        android:progressTint="#8C8C8C"
+        app:layout_constraintBottom_toTopOf="@+id/textgelen3"
+        app:layout_constraintEnd_toEndOf="@+id/textgelen3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textGelen2" />
+
+    <TextView
+        android:id="@+id/textGelen4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="9dp"
+        android:text="Ekstra İsteklerinizi Yazabilirsiniz"
+        android:textColor="@color/purple_500"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextIstek"
+        app:layout_constraintEnd_toEndOf="@+id/switch12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch10" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="205dp"
+        android:backgroundTint="@color/white"
+        android:minHeight="48dp"
+        android:text="Sarımsak"
+        android:textColor="@color/white"
+        android:textColorHighlight="#F6F6F6"
+        android:textColorLink="#F4F4F4"
+        android:thumbTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="85dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white"
+        android:minHeight="48dp"
+        android:text="Nane"
+        android:textColor="@color/white"
+        android:textColorHighlight="#F6F6F6"
+        android:textColorLink="#F4F4F4"
+        android:thumbTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/switch5"
+        app:layout_constraintStart_toStartOf="@+id/switch5"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:minHeight="48dp"
+        android:text="Dil"
+        android:textColor="@color/white"
+        android:textColorHighlight="#F6F6F6"
+        android:textColorLink="#F4F4F4"
+        android:thumbTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/switch6"
+        app:layout_constraintStart_toStartOf="@+id/switch6"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:minHeight="48dp"
+        android:text="Terbiye"
+        android:textColor="@color/white"
+        android:textColorHighlight="#F6F6F6"
+        android:textColorLink="#F4F4F4"
+        android:thumbTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/switch1"
+        app:layout_constraintTop_toBottomOf="@+id/switch1"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switch5"
+        android:layout_width="84dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="44dp"
+        android:backgroundTint="@color/white"
+        android:minHeight="48dp"
+        android:text="Beyin"
+        android:textColor="@color/white"
+        android:textColorHighlight="#F6F6F6"
+        android:textColorLink="#F4F4F4"
+        android:thumbTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/switch11"
+        app:layout_constraintStart_toStartOf="@+id/switch11"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switch6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:minHeight="48dp"
+        android:text="Sirke"
+        android:textColor="@color/white"
+        android:textColorHighlight="#F6F6F6"
+        android:textColorLink="#F4F4F4"
+        android:thumbTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/switch9"
+        app:layout_constraintStart_toStartOf="@+id/switch9"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switch7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:minHeight="48dp"
+        android:text="Krema"
+        android:textColor="@color/white"
+        android:textColorHighlight="#F6F6F6"
+        android:textColorLink="#F4F4F4"
+        android:thumbTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/switch4"
+        app:layout_constraintTop_toBottomOf="@+id/switch4"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switch8"
+        android:layout_width="78dp"
+        android:layout_height="38dp"
+        android:backgroundTint="@color/white"
+        android:minHeight="48dp"
+        android:text="Yağ"
+        android:textColor="@color/white"
+        android:textColorHighlight="#F6F6F6"
+        android:textColorLink="#F4F4F4"
+        android:thumbTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/switch5"
+        app:layout_constraintTop_toBottomOf="@+id/switch5"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switch9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:backgroundTint="@color/white"
+        android:minHeight="48dp"
+        android:text="Kaşar"
+        android:textColor="@color/white"
+        android:textColorHighlight="#F6F6F6"
+        android:textColorLink="#F4F4F4"
+        android:thumbTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/switch12"
+        app:layout_constraintStart_toStartOf="@+id/switch12"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switch10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:minHeight="48dp"
+        android:text="Kıtır"
+        android:textColor="@color/white"
+        android:textColorHighlight="#F6F6F6"
+        android:textColorLink="#F4F4F4"
+        android:thumbTint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/switch7"
+        app:layout_constraintTop_toBottomOf="@+id/switch7"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switch11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/white"
+        android:minHeight="48dp"
+        android:text="Limon"
+        android:textColor="@color/white"
+        android:textColorHighlight="#F6F6F6"
+        android:textColorLink="#F4F4F4"
+        android:thumbTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/textGelen4"
+        app:layout_constraintEnd_toStartOf="@+id/switch12"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/switch12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/white"
+        android:minHeight="48dp"
+        android:text="Toz Biber"
+        android:textColor="@color/white"
+        android:textColorHighlight="#F6F6F6"
+        android:textColorLink="#F4F4F4"
+        android:thumbTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/textGelen4"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <EditText
+        android:id="@+id/editTextIstek"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="54dp"
+
+        android:layout_marginEnd="54dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Başka Bir Arzunuz?"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/white"
+        android:textColorHint="#A1A1A1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <ImageView
+        android:id="@+id/siparisVer"
+        android:layout_width="112dp"
+        android:layout_height="51dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIstek"
+        app:layout_constraintVertical_bias="0.129"
+        app:srcCompat="@drawable/onayla" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="76dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002"
+        app:srcCompat="@drawable/ozan" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
